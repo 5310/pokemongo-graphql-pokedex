@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon --experimental-modules ./src/server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "now"
+    "stage": "now",
+    "deploy": "now alias"
   },
   "keywords": [
     "pokemongo",
