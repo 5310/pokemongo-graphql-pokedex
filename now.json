@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "pokemongo-graphql-pokedex",
+  "alias": "pokemongo-graphql-pokedex",
   "builds": [
       { "src": "src/server.mjs", "use": "@now/node-server" }
   ],
