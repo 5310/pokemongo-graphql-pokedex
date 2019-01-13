@@ -2,9 +2,11 @@
   "name": "pokemongo-graphql-pokedex",
   "version": "0.0.0",
   "description": "A GraphQL server for pokemongo-json-pokedex",
-  "main": "index.js",
+  "main": "src/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --experimental-modules ./src/server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "now"
   },
   "keywords": [
     "pokemongo",
@@ -15,6 +17,11 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.3.1",
-    "graphql": "^14.0.2"
+    "apollo-server-env": "^2.2.0",
+    "graphql": "^14.0.2",
+    "pokemongo-json-pokedex": "^3.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
