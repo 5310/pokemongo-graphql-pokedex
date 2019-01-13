@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pokemongo-graphql-pokedex",
+  "builds": [
+      { "src": "src/server.mjs", "use": "@now/node-server" }
+  ],
+  "routes": [
+      { "src": "/(.*)", "dest": "src/server.mjs" }
+  ]
+}
